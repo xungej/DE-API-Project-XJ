@@ -12,15 +12,20 @@ Public API limit:
 - 5 calls/min
 - 10,000/month
 
-__Note__: Because of the limitation of API, the current code only output 4 rows of data to avoid system sleep time. 
+__Note__: Because of the limitation of API, the current code only output 4 rows of data to avoid system sleep time. Otherwise it will return `"TypeError: string indices must be integers"`
 
 ### Requirements
 `pip install -r requirements.txt`
 
 ### Instructions
 
-Run `DE_API_Xunge_Jiang.py` file with inline argument -c for country -s for state
-Example: `python3 DE_API_Xunge_Jiang.py -c USA -s California`
+Run `DE_API_Xunge_Jiang.py` file with inline argument -c for country -s for state -sch for schema
+If need to print schema, add -sch y
+Example: 
+`python3 DE_API_Xunge_Jiang.py -c USA -s California`
+
+`python3 DE_API_Xunge_Jiang.py -c USA -s Georgia -sch y`
+
 
 ### Details
 + Country and state (inputs) can be outputs from other APIs. 
